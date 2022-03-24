@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <% data.forEach(item=>{ %>
+        <h2 class="coffee-name"><a href="/coffee/<%= item.id %>"><%= item.title %></a></h2>
+        <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid" />
+    <% }) %> 
+</main>
+
+<%- include('../partials/footer') %> 

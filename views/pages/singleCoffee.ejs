@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <h2 class="single-coffee-title"><%= data.title %></h2>
+    <p class="coffee-description"><%= data.description %></p>
+    <% data.ingredients.forEach(item=>{ %>
+        <p class="ingredient"><%= item %> </p>
+    <% }) %> 
+</main>
+
+<%- include('../partials/footer') %> 
